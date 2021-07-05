@@ -17,5 +17,9 @@ class Game:
     def get_possessions_team_b(self):
         return self.team_b.get_possessions()
 
+    def get_a_team_five(self, minute):
+        return self.team_a.get_five(minute)
 
+    def get_b_team_five(self, minute):
+        return self.team_b.get_five(minute)
 

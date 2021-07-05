@@ -7,14 +7,6 @@ class Player:
         self.stats = None
         self.play_by_play = []
 
-
-class Play:
-    def __init__(self):
-        self.minute = ""
-        self.definition = ""
-        self.coordinates = []
-
-
 class PlayerStats:
     def __init__(self):
         self.minutes = 0
