@@ -1,0 +1,3012 @@
+[
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 9,
+    "period": 1,
+    "score": "0-0"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 9,
+    "period": 1,
+    "score": "2-0"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 9,
+    "period": 1,
+    "score": "2-3"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 9,
+    "period": 1,
+    "score": "2-3"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 9,
+    "period": 1,
+    "score": "3-3"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 9,
+    "period": 1,
+    "score": "4-3"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 8,
+    "period": 1,
+    "score": "4-5"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 8,
+    "period": 1,
+    "score": "4-5"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 8,
+    "period": 1,
+    "score": "4-5"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 8,
+    "period": 1,
+    "score": "4-5"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 8,
+    "period": 1,
+    "score": "5-5"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 8,
+    "period": 1,
+    "score": "6-5"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 1,
+    "score": "6-7"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 1,
+    "score": "8-7"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 7,
+    "period": 1,
+    "score": "8-7"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 1,
+    "score": "8-9"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 6,
+    "period": 1,
+    "score": "8-9"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 6,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 6,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 1,
+    "score": "8-12"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 5,
+    "period": 1,
+    "score": "8-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 5,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 109,
+    "move": "Falta en atac",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 106,
+    "move": "Pèrdua",
+    "min": 3,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 2,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 2,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 2,
+    "period": 1,
+    "score": "10-14"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 2,
+    "period": 1,
+    "score": "10-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 2,
+    "period": 1,
+    "score": "12-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 160,
+    "move": "Personal 1TL",
+    "min": 2,
+    "period": 1,
+    "score": "12-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 2,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 1,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 1,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 1,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 1,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 1,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 1,
+    "period": 1,
+    "score": "13-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 1,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 1,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 1,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LILIANA BALLESTEROS LENCINA",
+    "actorId": 681618,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 9,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 9,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 8,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 8,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 8,
+    "period": 2,
+    "score": "15-16"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LILIANA BALLESTEROS LENCINA",
+    "actorId": 681618,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 8,
+    "period": 2,
+    "score": "15-19"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 2,
+    "score": "17-19"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 7,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 5,
+    "period": 2,
+    "score": "17-22"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 5,
+    "period": 2,
+    "score": "17-24"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 2,
+    "score": "17-24"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JÚLIA CRESPO SELVA",
+    "actorId": 681620,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 2,
+    "score": "17-24"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 5,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "BLANCA ACEVEDO VERGARA",
+    "actorId": 68421618759704477,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 4,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 2,
+    "score": "17-26"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 4,
+    "period": 2,
+    "score": "17-28"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JÚLIA CRESPO SELVA",
+    "actorId": 681620,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 3,
+    "period": 2,
+    "score": "19-28"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 2,
+    "period": 2,
+    "score": "21-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 160,
+    "move": "Personal 1TL",
+    "min": 2,
+    "period": 2,
+    "score": "21-28"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 2,
+    "period": 2,
+    "score": "21-28"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 2,
+    "period": 2,
+    "score": "23-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "BLANCA ACEVEDO VERGARA",
+    "actorId": 68421618759704477,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 2,
+    "period": 2,
+    "score": "23-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 2,
+    "period": 2,
+    "score": "23-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 2,
+    "period": 2,
+    "score": "23-28"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 2,
+    "period": 2,
+    "score": "23-30"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 1,
+    "period": 2,
+    "score": "23-30"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 1,
+    "period": 2,
+    "score": "23-30"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 1,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 1,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 0,
+    "period": 2,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 9,
+    "period": 3,
+    "score": "23-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 9,
+    "period": 3,
+    "score": "25-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 8,
+    "period": 3,
+    "score": "25-32"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 8,
+    "period": 3,
+    "score": "27-32"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 3,
+    "score": "27-34"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 7,
+    "period": 3,
+    "score": "27-34"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 7,
+    "period": 3,
+    "score": "27-34"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 3,
+    "score": "27-36"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 6,
+    "period": 3,
+    "score": "29-36"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 3,
+    "score": "29-36"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 3,
+    "score": "31-36"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 5,
+    "period": 3,
+    "score": "31-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 3,
+    "score": "31-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 3,
+    "score": "33-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 4,
+    "period": 3,
+    "score": "36-39"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 4,
+    "period": 3,
+    "score": "36-40"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 3,
+    "period": 3,
+    "score": "38-40"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 3,
+    "period": 3,
+    "score": "38-40"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 3,
+    "period": 3,
+    "score": "38-40"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 3,
+    "period": 3,
+    "score": "38-42"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 2,
+    "period": 3,
+    "score": "38-42"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "EVA CASAS FERRERO",
+    "actorId": 681619,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 2,
+    "period": 3,
+    "score": "38-42"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 2,
+    "period": 3,
+    "score": "38-42"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 2,
+    "period": 3,
+    "score": "38-44"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 2,
+    "period": 3,
+    "score": "38-44"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 2,
+    "period": 3,
+    "score": "38-47"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 1,
+    "period": 3,
+    "score": "40-47"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 1,
+    "period": 3,
+    "score": "42-47"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LAURA MACIAS BONET",
+    "actorId": 681623,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 1,
+    "period": 3,
+    "score": "42-47"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 1,
+    "period": 3,
+    "score": "42-47"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 1,
+    "period": 3,
+    "score": "42-47"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 1,
+    "period": 3,
+    "score": "42-47"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LILIANA BALLESTEROS LENCINA",
+    "actorId": 681618,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 0,
+    "period": 3,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MARIA LEIVA GINER",
+    "actorId": 681640,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 10,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LUCIA CARMONA REYES",
+    "actorId": 68421618759785980,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 10,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 9,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 9,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 9,
+    "period": 4,
+    "score": "42-50"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 9,
+    "period": 4,
+    "score": "42-51"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LILIANA BALLESTEROS LENCINA",
+    "actorId": 681618,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 9,
+    "period": 4,
+    "score": "42-51"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 8,
+    "period": 4,
+    "score": "42-51"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 8,
+    "period": 4,
+    "score": "42-51"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 8,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 8,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 8,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 159,
+    "move": "Personal",
+    "min": 8,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 8,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 8,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 7,
+    "period": 4,
+    "score": "42-52"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 7,
+    "period": 4,
+    "score": "42-54"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 160,
+    "move": "Personal 1TL",
+    "min": 7,
+    "period": 4,
+    "score": "42-54"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "LILIANA BALLESTEROS LENCINA",
+    "actorId": 681618,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 7,
+    "period": 4,
+    "score": "42-54"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 7,
+    "period": 4,
+    "score": "42-54"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 7,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 7,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 6,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 6,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 6,
+    "period": 4,
+    "score": "42-55"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA ASENSIO RODRÍGUEZ",
+    "actorId": 68421618759440054,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 6,
+    "period": 4,
+    "score": "42-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 6,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 6,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CARLA CEGARRA OLAYA",
+    "actorId": 68421618759527326,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLARA RECHE BARRADO",
+    "actorId": 681632,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LUCIA CARMONA REYES",
+    "actorId": 68421618759785980,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "EMMA FONT SEGURA",
+    "actorId": 681634,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 5,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 4,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 4,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 4,
+    "period": 4,
+    "score": "43-57"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 4,
+    "period": 4,
+    "score": "43-58"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 4,
+    "period": 4,
+    "score": "45-58"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 3,
+    "period": 4,
+    "score": "47-58"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 3,
+    "period": 4,
+    "score": "47-58"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 3,
+    "period": 4,
+    "score": "47-58"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 3,
+    "period": 4,
+    "score": "47-58"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 2,
+    "period": 4,
+    "score": "47-58"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 2,
+    "period": 4,
+    "score": "47-58"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 2,
+    "period": 4,
+    "score": "48-58"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 2,
+    "period": 4,
+    "score": "48-58"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 2,
+    "period": 4,
+    "score": "48-58"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 2,
+    "period": 4,
+    "score": "48-59"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 92,
+    "move": "Cistella de 1",
+    "min": 2,
+    "period": 4,
+    "score": "48-60"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "CLAUDIA PARRA TEJEDOR",
+    "actorId": 681621,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 2,
+    "period": 4,
+    "score": "48-60"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MIREIA VILA SANCHEZ",
+    "actorId": 68421618759550473,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 2,
+    "period": 4,
+    "score": "48-60"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "BERTA PONCE HIDALGO",
+    "actorId": 68421618759474279,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 2,
+    "period": 4,
+    "score": "48-60"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 97,
+    "move": "Intent fallat de 2",
+    "min": 1,
+    "period": 4,
+    "score": "48-60"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "JULIA PEDROSO ALVAREZ",
+    "actorId": 681622,
+    "idMove": 93,
+    "move": "Cistella de 2",
+    "min": 1,
+    "period": 4,
+    "score": "50-60"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 94,
+    "move": "Cistella de 3",
+    "min": 1,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA NUÑEZ CRESPO",
+    "actorId": 681639,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 1,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA CARMONA GONZALEZ",
+    "actorId": 681638,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 1,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 1,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "LAIA PANDO BIGAS",
+    "actorId": 681630,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 1,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "MIRIAM QUIROGA VELASCO",
+    "actorId": 681631,
+    "idMove": 98,
+    "move": "Intent fallat de 3",
+    "min": 0,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "IRENE BATALLA BORT",
+    "actorId": 68421618759678763,
+    "idMove": 161,
+    "move": "Personal 2TL",
+    "min": 0,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CLAUDIA CARRILLO ALSINA",
+    "actorId": 681635,
+    "idMove": 115,
+    "move": "Surt del camp",
+    "min": 0,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36405,
+    "actorName": "CARLA ARNUELOS GARCÍA",
+    "actorId": 681633,
+    "idMove": 112,
+    "move": "Entra a pista",
+    "min": 0,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 0,
+    "period": 4,
+    "score": "50-63"
+  },
+  {
+    "idTeam": 36404,
+    "actorName": "MARIA MORALES LAGUARDA",
+    "actorId": 68421618759500932,
+    "idMove": 96,
+    "move": "Intent fallat de 1",
+    "min": 0,
+    "period": 4,
+    "score": "50-63"
+  }
+]

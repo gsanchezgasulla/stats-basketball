@@ -1,11 +1,53 @@
-import inspect
+from play_by_play import PlayType, Play
+
 
 class Player:
     def __init__(self):
+        self.player_id = 0
         self.name = ""
         self.number = ""
         self.stats = None
         self.play_by_play = []
+
+    def get_minutes_played_distribution(self):
+        five_in_minute = {}
+        for i in range(0, 40):
+            five_in_minute[i] = 0
+
+        previous_play_minute = 1
+        in_out_plays = [play for play in self.play_by_play if play.definition == PlayType.SUBSTITUTION_IN
+                        or play.definition == PlayType.SUBSTITUTION_OUT]
+        for play in in_out_plays:
+            if play.definition == PlayType.SUBSTITUTION_IN:
+                pass
+            elif play.definition == PlayType.SUBSTITUTION_OUT:
+                for i in range(previous_play_minute, play.minute):
+                    five_in_minute[i] = 1
+            previous_play_minute = play.minute
+
+        return five_in_minute
+
+    def fill_stats(self, json_stats):
+        player_stats = PlayerStats()
+        player_stats.minutes = json_stats
+        player_stats.defensive_rebounds = int(json_stats["defensiveRebound"])
+        player_stats.offensive_rebounds = int(json_stats["offensiveRebound"])
+        player_stats.assists = int(json_stats["assists"])
+        player_stats.steals = int(json_stats["steals"])
+        player_stats.turnovers = int(json_stats["lost"])
+        player_stats.blocked_shots = int(json_stats["block"])
+        player_stats.blocks_received = int(json_stats["blockReceived"])
+        player_stats.fouls_made = int(json_stats["faults"])
+        player_stats.fouls_received = int(json_stats["faultReceived"])
+
+        player_stats.two_attempted = int(json_stats["shotsOfTwoAttempted"])
+        player_stats.two_made = int(json_stats["shotsOfTwoSuccessful"])
+        player_stats.three_attempted = int(json_stats["shotsOfThreeAttempted"])
+        player_stats.three_made = int(json_stats["shotsOfThreeSuccessful"])
+        player_stats.free_throw_attempted = int(json_stats["shotsOfOneAttempted"])
+        player_stats.free_throw_made = int(json_stats["shotsOfOneSuccessful"])
+        self.stats = player_stats
+
 
 class PlayerStats:
     def __init__(self):
