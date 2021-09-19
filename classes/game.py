@@ -29,6 +29,11 @@ class Game:
         self.__fill_play_by_play(json_play_by_play)
         self.__fill_players_play_by_play()
 
+        # After all is set we need to add the SUBSTITUTION_IN for the starters, and SUBSTITUTION_OUT when ending the game
+        self.__add_starters()
+        self.__add_finishers(json_game)
+
+
     def __fill_game_details(self, json_game):
         self.date = json_game["time"]
         self.team_a = json_game["localId"]
@@ -69,6 +74,7 @@ class Game:
             player = Player()
             player.player_id = player_json["actorId"]
             player.name = player_json["name"]
+            player.uid = player_json["uuid"]
             player.number = int(player_json["dorsal"])
 
             if player_json["starting"]:  # We need to create a IN Play
@@ -84,3 +90,25 @@ class Game:
             team.players[player.player_id] = player
         return team
 
+    def __add_starters(self):
+        self.play_by_play[0] = []
+        for team in self.teams.values():
+            for player in team.players.values():
+                for play in player.play_by_play:
+                    if play.definition == PlayType.SUBSTITUTION_IN and play.minute == 0:
+                        self.play_by_play[0].append(play)
+
+    def __add_finishers(self, json_game):
+        for team in json_game["teams"]:
+            for player in team["players"]:
+                for in_out in player["inOutsList"]:
+                    if in_out["type"] == "OUT_TYPE" and in_out["minuteAbsolut"] == 40:
+                        play = Play()
+                        play.team_id = team["teamIdIntern"]
+                        play.player_id = player["actorId"]
+                        play.minute = 40
+                        play.definition = PlayType.SUBSTITUTION_OUT
+                        self.play_by_play[40].append(play)
+
+                        #also add it to the player
+                        self.teams[play.team_id].players[play.player_id].play_by_play.append(play)

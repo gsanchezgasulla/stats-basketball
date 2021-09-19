@@ -3,9 +3,12 @@ import json
 import sys
 
 sys.path.append("../classes/")
+sys.path.append("../tools/")
 from data import Five
 from game import Game
 from play_by_play import Play, PlayType
+
+from utils import print_fives_by_minute_in_csv
 
 
 def get_used_five_team_a(game, sort):  # the other sort option is by number of minutes desc
@@ -31,7 +34,6 @@ def get_used_five_team(game, team_id, sort="appearance"):  # the other sort opti
         fives_by_minute[minute].points_scored = team_a_score
         fives_by_minute[minute].points_received = team_b_score
 
-    print(len(fives_by_minute))
     fives_list = []
     for minute, five_players in fives_by_minute.items():
         added = False
@@ -55,8 +57,10 @@ def get_used_five_team(game, team_id, sort="appearance"):  # the other sort opti
         pass
     elif sort == "minutes":
         fives_list.sort(key=lambda x: x.total_minutes, reverse=True)
-    elif sort == "points":
+    elif sort == "points_scored":
         fives_list.sort(key=lambda x: x.points_scored, reverse=True)
+    elif sort == "points_received":
+        fives_list.sort(key=lambda x: x.points_received, reverse=True)
 
     return fives_by_minute, fives_list
 
@@ -84,15 +88,13 @@ def get_buckets_in_minute(game, minute):
 
     return team_a_score, team_b_score
 
-basquetcatala_game_url = "https://www.basquetcatala.cat/estadistiques/2021/6145db96a4d4270610364080"
+basquetcatala_game_url = "https://www.basquetcatala.cat/estadistiques/2021/613ca346a4d427060f7943cc"
 game_id = basquetcatala_game_url.split("/")[-1]
 json_stats_header_url = "https://msstats.optimalwayconsulting.com/v1/fcbq/getJsonWithMatchStats/"
 json_play_by_play_header_url = "https://msstats.optimalwayconsulting.com/v1/fcbq/getJsonWithMatchMoves/"
 
 contents = urllib.request.urlopen(json_stats_header_url + game_id).read()
-play_by_play_contents = urllib.request.urlopen(json_moves_header_url + game_id).read()
 json_game = json.loads(contents)
-json_play_by_play = json.loads(play_by_play_contents)
 
 contents = urllib.request.urlopen(json_play_by_play_header_url + game_id).read()
 json_play_by_play = json.loads(contents)
@@ -100,28 +102,29 @@ json_play_by_play = json.loads(contents)
 game = Game()
 game.fill_game(json_game, json_play_by_play)
 
-minute = 18
-print(game.get_a_team_five(minute))
-print(game.get_b_team_five(minute))
+# print(game.get_a_team_five(minute))
+# print(game.get_b_team_five(minute))
+#
+# print(game.teams[game.team_a].get_effective_field_goal())
+# print(game.teams[game.team_b].get_effective_field_goal())
+# print(game.teams[game.team_a].get_true_shoot())
+# print(game.teams[game.team_b].get_true_shoot())
+# print(game.teams[game.team_a].get_possessions())
+# print(game.teams[game.team_b].get_possessions())
 
-print(game.teams[game.team_a].get_effective_field_goal())
-print(game.teams[game.team_b].get_effective_field_goal())
-print(game.teams[game.team_a].get_true_shoot())
-print(game.teams[game.team_b].get_true_shoot())
-print(game.teams[game.team_a].get_possessions())
-print(game.teams[game.team_b].get_possessions())
-
-fives_by_minute, fives_list = get_used_five_team_a(game, "points")
+fives_by_minute, fives_list = get_used_five_team_a(game, "points_received")
 
 # for five in fives_list:
 #     print("========")
 #     print(five.players)
-#     print(five.total_minutes)
+#     print("Total minutes: " + str(five.total_minutes))
+#     print("Points scored: " + str(five.points_scored))
+#     print("Points received: " + str(five.points_received))
+
+# for minute, five in fives_by_minute.items():
+#     print(five.players)
+#     print(minute)
 #     print(five.points_scored)
 #     print(five.points_received)
-#
-for minute, five in fives_by_minute.items():
-    print(five.players)
-    print(minute)
-    print(five.points_scored)
-    print(five.points_received)
+
+print_fives_by_minute_in_csv(game.teams[game.team_b].players.values())
