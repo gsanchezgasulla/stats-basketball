@@ -5,6 +5,7 @@ class Player:
         self.name = ""
         self.number = ""
         self.stats = None
+        self.uid = 0
         self.play_by_play = []
 
 class PlayerStats:

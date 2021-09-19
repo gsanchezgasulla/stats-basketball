@@ -50,6 +50,7 @@ def fill_team(json_game_team):
     team.name = json_game_team["name"]
     for player_json in json_game_team["players"]:
         player = Player()
+        player.uid = player_json["uuid"]
         player.name = player_json["name"]
         player.number = int(player_json["dorsal"])
 
@@ -58,15 +59,19 @@ def fill_team(json_game_team):
         team.players.append(player)
     return team
 
-basquetcatala_game_url = "https://www.basquetcatala.cat/estadistiques/2020/607c6b25a4d42705fe62bbd8"
+basquetcatala_game_url = "https://www.basquetcatala.cat/estadistiques/2021/6145db96a4d4270610364080"
 game_id = basquetcatala_game_url.split("/")[-1]
 json_stats_header_url = "https://msstats.optimalwayconsulting.com/v1/fcbq/getJsonWithMatchStats/"
+json_moves_header_url = "https://msstats.optimalwayconsulting.com/v1/fcbq/getJsonWithMatchMoves/"
 
 contents = urllib.request.urlopen(json_stats_header_url + game_id).read()
+play_by_play_contents = urllib.request.urlopen(json_moves_header_url + game_id).read()
 json_game = json.loads(contents)
+json_play_by_play = json.loads(play_by_play_contents)
 
 game = Game()
 game.date = json_game["time"]
+game.fill_play_by_play(json_play_by_play)
 
 game.team_a = fill_team(json_game["teams"][0])
 game.team_b = fill_team(json_game["teams"][1])
