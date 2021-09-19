@@ -1,11 +1,13 @@
 import inspect
 
-from play import Play, PlayType
+from play_by_play import Play, PlayType
+
 
 class Team:
     def __init__(self):
         self.name = ""
-        self.players = []
+        self.team_id = 0
+        self.players = {}
 
     def get_points(self):
         return self.__get_generic(inspect.currentframe().f_code.co_name)
@@ -69,10 +71,12 @@ class Team:
 
     def get_five(self, minute):
         five = []
-        for player in self.players:
-            for index, play in enumerate(player.play_by_play):
+        for player in self.players.values():
+            in_out_plays = [play for play in player.play_by_play if play.definition == PlayType.SUBSTITUTION_IN
+                            or play.definition == PlayType.SUBSTITUTION_OUT]
+            for index, play in enumerate(in_out_plays):
                 if play.minute >= minute:
-                    previous_play = player.play_by_play[index - 1]
+                    previous_play = in_out_plays[index - 1]
                     if previous_play.definition == PlayType.SUBSTITUTION_IN:
                         five.append(player.name)
                     break
@@ -102,6 +106,6 @@ class Team:
 
     def __get_generic(self, data_string):
         total = 0
-        for player in self.players:
+        for player in self.players.values():
             total += getattr(player.stats, data_string)()
         return total
