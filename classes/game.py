@@ -1,10 +1,11 @@
-from team import Team
-from player import Player
-from play_by_play import Play, PlayType
+from .team import Team
+from .player import Player
+from .play_by_play import Play, PlayType
 
 
 class Game:
-    def __init__(self):
+    def __init__(self, jornada):
+        self.key = jornada
         self.team_a = None
         self.team_b = None
         self.teams = {}

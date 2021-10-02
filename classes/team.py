@@ -1,6 +1,6 @@
 import inspect
 
-from play_by_play import Play, PlayType
+from .play_by_play import PlayType
 
 
 class Team:

@@ -1,4 +1,4 @@
-from play_by_play import PlayType, Play
+from .play_by_play import PlayType
 
 
 class Player:
