@@ -6,22 +6,19 @@ sys.path.append("./classes")
 
 from classes.game import Game
 from tools.utils import *
+from llista_partits import Partits
 
 
 
-partits = {}
-partits["lima_V"] = "https://www.basquetcatala.cat/estadistiques/2021/613ca346a4d427060f7943cc"
-partits["granollers_L"] = "https://www.basquetcatala.cat/estadistiques/2021/6145db96a4d4270610364080"
-partits["cornella_L"] = "https://www.basquetcatala.cat/estadistiques/2021/614f43d7a4d4270613252d6d"
-partits["tgn_V"] = "https://www.basquetcatala.cat/estadistiques/2021/6158af70a4d427060de72f55"
+
+jornada = "cnt_L"
+
+
 
 json_stats_header_url = "https://msstats.optimalwayconsulting.com/v1/fcbq/getJsonWithMatchStats/"
 json_play_by_play_header_url = "https://msstats.optimalwayconsulting.com/v1/fcbq/getJsonWithMatchMoves/"
 
-
-
-
-jornada = "tgn_V"
+partits = Partits().llista_partits
 game_id = partits[jornada].split("/")[-1]
 
 contents = urllib.request.urlopen(json_stats_header_url + game_id).read()
