@@ -2,32 +2,26 @@ from classes.data import Five
 from classes.play_by_play import PlayType
 
 
-def get_fives_by_minute_penya(game):
+def get_fives_by_minute(game, minutes_distribution):
     if game.key.split("_")[-1] == "L":
-        return get_fives_by_minute(game.teams[game.team_a])
+        return get_fives_by_minute_object_by_team(game.teams[game.team_a], minutes_distribution)
     elif game.key.split("_")[-1] == "V":
-        return get_fives_by_minute(game.teams[game.team_b])
+        return get_fives_by_minute_object_by_team(game.teams[game.team_b], minutes_distribution)
 
 
-def get_fives_by_minute(team):
-    out_string = ","
-    for minute in range(1, 41):
-        out_string += str(minute)
-        out_string += ","
-    out_string += "\n"
-
+def get_fives_by_minute_object_by_team(team, minutes_distribution):
     for player in team.players.values():
-        out_string += player.name
-        out_string += ","
-        for minute in player.get_minutes_played_distribution().values():
-            out_string += str(minute)
-            out_string += ","
-        out_string += "\n"
+        if player.name not in minutes_distribution.keys():
+            minutes_distribution[player.name] = []
+            for minute in range(0, 40):
+                minutes_distribution[player.name].append(0)
+        for minute, in_game in player.get_minutes_played_distribution().items():
+            minutes_distribution[player.name][minute] += in_game
 
-    return out_string
+    return minutes_distribution
 
 
-def get_used_five_penya(game):
+def get_used_five(game):
     if game.key.split("_")[-1] == "L":
         return get_used_five_team_a(game)
     elif game.key.split("_")[-1] == "V":
@@ -110,3 +104,50 @@ def get_buckets_in_minute(game, team_id, minute):
                 points_received += 3
 
     return points_scored, points_received
+
+
+def get_player_usage(game, players_usage):
+    if game.key.split("_")[-1] == "L":
+        return get_player_usage_by_team(game.teams[game.team_a], players_usage)
+    elif game.key.split("_")[-1] == "V":
+        return get_player_usage_by_team(game.teams[game.team_b], players_usage)
+
+
+def get_player_usage_by_team(team, players_usage):
+    for player in team.players.values():
+        if player.name not in players_usage.keys():
+            players_usage[player.name] = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
+                                          "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
+                                          "minutes": 0}
+        players_usage[player.name]["two_made"] += player.stats.get_two_made()
+        players_usage[player.name]["three_made"] += player.stats.get_three_made()
+        players_usage[player.name]["free_throw_made"] += player.stats.get_free_throw_made()
+        players_usage[player.name]["two_attempted"] += player.stats.get_two_attempted()
+        players_usage[player.name]["three_attempted"] += player.stats.get_three_attempted()
+        players_usage[player.name]["free_throw_attempted"] += player.stats.get_free_throw_attempted()
+        players_usage[player.name]["minutes"] += player.stats.get_minutes()
+    return players_usage
+
+
+def get_player_usage_evolution(game, players_usage):
+    if game.key.split("_")[-1] == "L":
+        return get_player_usage_evolution_by_team(game.teams[game.team_a], players_usage, game.key)
+    elif game.key.split("_")[-1] == "V":
+        return get_player_usage_evolution_by_team(game.teams[game.team_b], players_usage, game.key)
+
+
+def get_player_usage_evolution_by_team(team, players_evolution, game_key):
+    for player in team.players.values():
+        if player.name not in players_evolution.keys():
+            players_evolution[player.name] = {}
+        players_evolution[player.name][game_key] = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
+                                          "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
+                                          "minutes": 0}
+        players_evolution[player.name][game_key]["two_made"] += player.stats.get_two_made()
+        players_evolution[player.name][game_key]["three_made"] += player.stats.get_three_made()
+        players_evolution[player.name][game_key]["free_throw_made"] += player.stats.get_free_throw_made()
+        players_evolution[player.name][game_key]["two_attempted"] += player.stats.get_two_attempted()
+        players_evolution[player.name][game_key]["three_attempted"] += player.stats.get_three_attempted()
+        players_evolution[player.name][game_key]["free_throw_attempted"] += player.stats.get_free_throw_attempted()
+        players_evolution[player.name][game_key]["minutes"] += player.stats.get_minutes()
+    return players_evolution

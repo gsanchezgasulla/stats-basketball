@@ -87,7 +87,7 @@ class Game:
 
                 player.play_by_play.append(play)
 
-            player.fill_stats(player_json["data"])
+            player.fill_stats(player_json["data"], player_json["timePlayed"])
             team.players[player.player_id] = player
         return team
 

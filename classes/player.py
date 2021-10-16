@@ -28,9 +28,9 @@ class Player:
 
         return five_in_minute
 
-    def fill_stats(self, json_stats):
+    def fill_stats(self, json_stats, minutes_played):
         player_stats = PlayerStats()
-        player_stats.minutes = json_stats
+        player_stats.minutes = minutes_played
         player_stats.defensive_rebounds = int(json_stats["defensiveRebound"])
         player_stats.offensive_rebounds = int(json_stats["offensiveRebound"])
         player_stats.assists = int(json_stats["assists"])
@@ -70,6 +70,9 @@ class PlayerStats:
         self.three_made = 0
         self.free_throw_attempted = 0
         self.free_throw_made = 0
+
+    def get_minutes(self):
+        return self.minutes
 
     def get_points(self):
         return self.two_made * 2 + self.three_made * 3 + self.free_throw_made

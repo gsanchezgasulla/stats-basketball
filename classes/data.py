@@ -1,8 +1,4 @@
 
-class Season:
-    def __init__(self):
-        self.games = []
-
 class Five:
     def __init__(self):
         self.players = []
