@@ -86,22 +86,25 @@ def get_buckets_in_minute(game, team_id, minute):
     points_scored = 0
     points_received = 0
 
-    for play in game.play_by_play[minute + 1]:
-        if play.definition == PlayType.FREE_THROW_MADE:
-            if team_id == play.team_id:
-                points_scored += 1
-            else:
-                points_received += 1
-        elif play.definition == PlayType.TWO_MADE:
-            if team_id == play.team_id:
-                points_scored += 2
-            else:
-                points_received += 2
-        elif play.definition == PlayType.THREE_MADE:
-            if team_id == play.team_id:
-                points_scored += 3
-            else:
-                points_received += 3
+    if minute + 1 in game.play_by_play.keys():
+        for play in game.play_by_play[minute + 1]:
+            if play.definition == PlayType.FREE_THROW_MADE:
+                if team_id == play.team_id:
+                    points_scored += 1
+                else:
+                    points_received += 1
+            elif play.definition == PlayType.TWO_MADE:
+                if team_id == play.team_id:
+                    points_scored += 2
+                else:
+                    points_received += 2
+            elif play.definition == PlayType.THREE_MADE:
+                if team_id == play.team_id:
+                    points_scored += 3
+                else:
+                    points_received += 3
+    else:
+        pass
 
     return points_scored, points_received
 
