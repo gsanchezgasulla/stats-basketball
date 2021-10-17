@@ -10,9 +10,9 @@ class Player:
         self.uid = 0
         self.play_by_play = []
 
-    def get_minutes_played_distribution(self):
+    def get_minutes_played_distribution(self, game_total_minutes):
         five_in_minute = {}
-        for i in range(0, 40):
+        for i in range(0, game_total_minutes):
             five_in_minute[i] = 0
 
         previous_play_minute = 1

@@ -47,10 +47,11 @@ class ComputeStatistics():
 
     def get_minutes_distribution_in_game(self, game_key):
         games_to_display = self.__get_games_to_display(game_key)
+        max_minutes_played = self.__get_max_minutes_played(games_to_display)
         minutes_distribution = {}
         minutes_score = {}
         out_str = ","
-        for minute in range(0, 40):
+        for minute in range(0, max_minutes_played):
             out_str += str(minute)
             out_str += ","
             minutes_score[minute] = {"points_scored": 0, "points_received": 0}
@@ -66,14 +67,14 @@ class ComputeStatistics():
 
         for player in minutes_distribution.keys():
             out_str += player + ","
-            for minute in range(0, 40):
+            for minute in range(0, max_minutes_played):
                 out_str += str(minutes_distribution[player][minute]) + ","
             out_str += "\n"
 
         out_str += "Punts anotats," + ",".join(
-            [str(minutes_score[minute]["points_scored"]) for minute in range(0, 40)]) + "\n"
+            [str(minutes_score[minute]["points_scored"]) for minute in range(0, max_minutes_played)]) + "\n"
         out_str += "Punts rebuts," + ",".join(
-            [str(minutes_score[minute]["points_received"]) for minute in range(0, 40)]) + "\n"
+            [str(minutes_score[minute]["points_received"]) for minute in range(0, max_minutes_played)]) + "\n"
 
         return out_str
 
@@ -243,6 +244,13 @@ class ComputeStatistics():
         #                              stats["minutes"] != 0 else 0)
 
         return out_str
+
+    def __get_max_minutes_played(self, games_to_display):
+        total_max_minutes = 40
+        for game in games_to_display:
+            total_max_minutes = max(total_max_minutes, game.total_minutes)
+        return total_max_minutes
+
 
 
 

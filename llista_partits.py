@@ -9,7 +9,7 @@ class Partits:
     llista_partits["cnt_L"] = "https://www.basquetcatala.cat/estadistiques/2021/6162bf52a4d427061954512c"
     llista_partits["lima_L"] = "https://www.basquetcatala.cat/estadistiques/2021/6165cb51a4d427061b7d00f1"
     llista_partits["granollers_V"] = "https://www.basquetcatala.cat/estadistiques/2021/616b2705a4d4270628db9c1b"
-    llista_partits["almeda_L"] = "https://www.basquetcatala.cat/estadistiques/2021/616bfb54a4d4270628dbaa30"
+    llista_partits["manresa_V"] = "https://www.basquetcatala.cat/estadistiques/2021/6165cb86a4d427061b7d0109"
 
     def get_partits_to_print(self):
         txt = ""

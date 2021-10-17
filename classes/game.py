@@ -11,6 +11,7 @@ class Game:
         self.teams = {}
         self.date = ""
         self.category = ""
+        self.total_minutes = 40
         self.play_by_play = {}
 
     def get_possessions_team_a(self):
@@ -39,6 +40,7 @@ class Game:
         self.date = json_game["time"]
         self.team_a = json_game["localId"]
         self.team_b = json_game["visitId"]
+        self.total_minutes = 40 + 5*(json_game["period"] - 4)
 
         for json_team in json_game["teams"]:
             team = self.__fill_team(json_team)
@@ -52,7 +54,10 @@ class Game:
             play.team_id = json_play["idTeam"]
 
             # Here minutes go descending from 9 to 0, and are depending on the period, we need to standardize
-            play.minute = 10*(json_play["period"]-1) + (10 - json_play["min"])
+            if json_play["period"] > 4:
+                play.minute = 10 * (json_play["period"] - 1) + (5 - json_play["min"])
+            else:
+                play.minute = 10*(json_play["period"]-1) + (10 - json_play["min"])
             play.fill_definition(json_play["idMove"])
             play.score_after_play = json_play["score"]
             if not play.minute in play_by_play.keys():
@@ -103,13 +108,13 @@ class Game:
         for team in json_game["teams"]:
             for player in team["players"]:
                 for in_out in player["inOutsList"]:
-                    if in_out["type"] == "OUT_TYPE" and in_out["minuteAbsolut"] == 40:
+                    if in_out["type"] == "OUT_TYPE" and in_out["minuteAbsolut"] == self.total_minutes:
                         play = Play()
                         play.team_id = team["teamIdIntern"]
                         play.player_id = player["actorId"]
-                        play.minute = 40
+                        play.minute = self.total_minutes
                         play.definition = PlayType.SUBSTITUTION_OUT
-                        self.play_by_play[40].append(play)
+                        self.play_by_play[self.total_minutes].append(play)
 
                         #also add it to the player
                         self.teams[play.team_id].players[play.player_id].play_by_play.append(play)

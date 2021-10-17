@@ -4,18 +4,18 @@ from classes.play_by_play import PlayType
 
 def get_fives_by_minute(game, minutes_distribution):
     if game.key.split("_")[-1] == "L":
-        return get_fives_by_minute_object_by_team(game.teams[game.team_a], minutes_distribution)
+        return get_fives_by_minute_object_by_team(game.teams[game.team_a], minutes_distribution, game.total_minutes)
     elif game.key.split("_")[-1] == "V":
-        return get_fives_by_minute_object_by_team(game.teams[game.team_b], minutes_distribution)
+        return get_fives_by_minute_object_by_team(game.teams[game.team_b], minutes_distribution, game.total_minutes)
 
 
-def get_fives_by_minute_object_by_team(team, minutes_distribution):
+def get_fives_by_minute_object_by_team(team, minutes_distribution, game_total_minutes):
     for player in team.players.values():
         if player.name not in minutes_distribution.keys():
             minutes_distribution[player.name] = []
-            for minute in range(0, 40):
+            for minute in range(0, game_total_minutes):
                 minutes_distribution[player.name].append(0)
-        for minute, in_game in player.get_minutes_played_distribution().items():
+        for minute, in_game in player.get_minutes_played_distribution(game_total_minutes).items():
             minutes_distribution[player.name][minute] += in_game
 
     return minutes_distribution
@@ -29,24 +29,24 @@ def get_used_five(game):
 
 
 def get_used_five_team_a(game, sort="appearance"):  # the other sort option is by number of minutes desc
-    return get_used_five_team(game, game.team_a, sort)
+    return get_used_five_team(game, game.team_a, game.total_minutes, sort)
 
 
 def get_used_five_team_b(game, sort="appearance"):  # the other sort option is by number of minutes desc
-    return get_used_five_team(game, game.team_b, sort)
+    return get_used_five_team(game, game.team_b, game.total_minutes, sort)
 
 
-def get_used_five_team(game, team_id, sort="appearance"):  # the other sort option is by number of minutes desc
+def get_used_five_team(game, team_id, game_total_minutes, sort="appearance"):  # the other sort option is by number of minutes desc
 
     fives_by_minute = {}
-    for i in range(0, 40):
+    for i in range(0, game_total_minutes):
         fives_by_minute[i] = Five()
     for player in game.teams[team_id].players.values():
-        minutes_played_distribution = player.get_minutes_played_distribution()
+        minutes_played_distribution = player.get_minutes_played_distribution(game_total_minutes)
         for minute in minutes_played_distribution.keys():
             if minutes_played_distribution[minute]:
                 fives_by_minute[minute].players.append(player.name)
-    for minute in range(0, 40):
+    for minute in range(0, game_total_minutes):
         points_scored, points_received = get_buckets_in_minute(game, team_id, minute)
         fives_by_minute[minute].points_scored = points_scored
         fives_by_minute[minute].points_received = points_received
