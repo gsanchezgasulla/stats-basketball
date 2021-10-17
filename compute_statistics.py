@@ -67,7 +67,7 @@ class ComputeStatistics():
 
         for player in minutes_distribution.keys():
             out_str += player + ","
-            for minute in range(0, max_minutes_played):
+            for minute in range(0, len(minutes_distribution[player])):
                 out_str += str(minutes_distribution[player][minute]) + ","
             out_str += "\n"
 
