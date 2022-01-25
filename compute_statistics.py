@@ -84,7 +84,7 @@ class ComputeStatistics():
         for game in games_to_display:
             players = get_player_usage(game, players)
 
-        out_str = "Jugadora, %T2, %T3, %TLL, %Us2, %Us3, %UsLL, %UsEquip, %UsMinute\n"
+        out_str = "Jugadora, %T2, TotalT2, %T3, TotalT3, %TLL, TotalTLL, %Us2, %Us3, %UsLL, %UsEquip, %UsMinute\n"
         team_usage = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
                       "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
                       "minutes": 0}
@@ -95,8 +95,11 @@ class ComputeStatistics():
         for player, stats in players.items():
             out_str += player + ","
             out_str += "%.2f," % (stats["two_made"]/float(stats["two_attempted"])*100 if stats["two_attempted"] != 0 else 0)
+            out_str += "%.2f," % (float(stats["two_attempted"]))
             out_str += "%.2f," % (stats["three_made"]/float(stats["three_attempted"])*100  if stats["three_attempted"] != 0 else 0)
+            out_str += "%.2f," % (float(stats["three_attempted"]))
             out_str += "%.2f," % (stats["free_throw_made"]/float(stats["free_throw_attempted"])*100 if stats["free_throw_attempted"] != 0 else 0)
+            out_str += "%.2f," % (float(stats["free_throw_attempted"]))
             total_attempted = float(stats["two_attempted"] + stats["three_attempted"] + 0.44*stats["free_throw_attempted"])
             out_str += "%.2f," % (stats["two_attempted"]/total_attempted*100 if total_attempted != 0 else 0)
             out_str += "%.2f," % (stats["three_attempted"]/total_attempted*100 if total_attempted != 0 else 0)
