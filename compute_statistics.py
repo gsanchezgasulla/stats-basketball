@@ -254,6 +254,21 @@ class ComputeStatistics():
             total_max_minutes = max(total_max_minutes, game.total_minutes)
         return total_max_minutes
 
+    def get_team_possessions_by_match(self, game_key):
+        games_to_display = self.__get_games_to_display(game_key)
+
+        header_str = "Possessions by match,"
+        teams_study_str = "Team studied,"
+        opponent_str = "Team opponent,"
+        for game in games_to_display:
+            header_str += game.key + ","
+            possessions_a, possessions_b = get_possessions_by_match(game)
+            teams_study_str += str(possessions_a) + ","
+            opponent_str += str(possessions_b) + ","
+        teams_study_str += "\n"
+        header_str += "\n"
+        opponent_str += "\n"
+        return header_str + teams_study_str + opponent_str
 
 
 

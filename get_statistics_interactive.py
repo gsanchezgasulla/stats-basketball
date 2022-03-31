@@ -41,11 +41,12 @@ answer_stats = ask_question("Actualment el programa permet visualitzar les segü
                             "\t1. Punts anotats i rebuts per 5s (acumulats i per partit)\n"
                             "\t2. Distribució de minuts dels jugadors (acumulats i per partit)\n"
                             "\t3. % us jugador  (acumulats i per partit)\n"
-                            "\t4. % us jugador evolucio al llarg de partits", 4)
+                            "\t4. % us jugador evolucio al llarg de partits\n"
+                            "\t5. evolució possessions per partit de l'equip.", 5)
 
 answer_accumulated = 0
 game = "all"
-if answer_stats != 4:
+if answer_stats != 4 or answer_stats != 5:
     answer_accumulated = ask_question("\nVols veure els resultats acumulats o només d'un partit?",
                                   "\t1. Acumulats\n"
                                   "\t2. Un sol partit", 2)
@@ -57,14 +58,21 @@ if answer_accumulated == 2:
 
 statistics_calculator = ComputeStatistics()
 out_str = ""
-if answer_stats == 1:
-    out_str = statistics_calculator.get_scores_by_fives(game)
-elif answer_stats == 2:
-    out_str = statistics_calculator.get_minutes_distribution_in_game(game)
-elif answer_stats == 3:
-    out_str = statistics_calculator.get_player_usage(game)
-elif answer_stats == 4:
-    out_str = statistics_calculator.get_player_usage_evolution(game)
+try:
+    if answer_stats == 1:
+        out_str = statistics_calculator.get_scores_by_fives(game)
+    elif answer_stats == 2:
+        out_str = statistics_calculator.get_minutes_distribution_in_game(game)
+    elif answer_stats == 3:
+        out_str = statistics_calculator.get_player_usage(game)
+    elif answer_stats == 4:
+        out_str = statistics_calculator.get_player_usage_evolution(game)
+    elif answer_stats == 5:
+        out_str = statistics_calculator.get_team_possessions_by_match(game)
 
-print("\n\n\n Les teves estadístiques són:\n\n")
-print(out_str)
+except (Exception, BaseException) as e:
+    out_str  = "There has been an error:\n\n"
+    out_str += e.__str__()
+finally:
+    with open("estadistiques.txt", "w+") as f_out:
+        f_out.write(out_str)

@@ -154,3 +154,20 @@ def get_player_usage_evolution_by_team(team, players_evolution, game_key):
         players_evolution[player.name][game_key]["free_throw_attempted"] += player.stats.get_free_throw_attempted()
         players_evolution[player.name][game_key]["minutes"] += player.stats.get_minutes()
     return players_evolution
+
+
+def get_possessions_by_team(team):
+    return team.get_possessions()
+
+
+def get_possessions_by_match(game):
+    possessions_team_to_study = 0
+    possessions_opponent = 0
+    if game.key.split("_")[-1] == "L":
+        possessions_team_to_study = get_possessions_by_team(game.teams[game.team_a])
+        possessions_opponent = get_possessions_by_team(game.teams[game.team_b])
+    elif game.key.split("_")[-1] == "V":
+        possessions_team_to_study = get_possessions_by_team(game.teams[game.team_b])
+        possessions_opponent = get_possessions_by_team(game.teams[game.team_a])
+
+    return possessions_team_to_study, possessions_opponent

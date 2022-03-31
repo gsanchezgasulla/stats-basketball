@@ -80,7 +80,8 @@ class Game:
             player = Player()
             player.player_id = player_json["actorId"]
             player.name = player_json["name"]
-            player.uid = player_json["uuid"]
+            if "uuid" in player_json.keys():
+                player.uid = player_json["uuid"]
             player.number = int(player_json["dorsal"])
 
             if player_json["starting"]:  # We need to create a IN Play
