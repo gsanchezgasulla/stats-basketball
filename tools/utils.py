@@ -135,27 +135,42 @@ def get_player_usage_by_team(team, players_usage):
     return players_usage
 
 
-def get_player_usage_evolution(game, players_usage):
-    if game.key.split(split_char)[-1] == "L":
-        return get_player_usage_evolution_by_team(game.teams[game.team_a], players_usage, game.key)
-    elif game.key.split(split_char)[-1] == "V":
-        return get_player_usage_evolution_by_team(game.teams[game.team_b], players_usage, game.key)
+def initialize_all_players(games_to_display):
+    all_players = []
+    for game in games_to_display:
+        if game.key.split(split_char)[-1] == "L":
+            team = game.teams[game.team_a]
+        elif game.key.split(split_char)[-1] == "V":
+            team = game.teams[game.team_b]
+        for player in team.players.values():
+            if player.name not in all_players:
+                all_players.append((player.name, player.player_id))
+    return all_players
+
+def get_player_usage_evolution(game, all_players, players_usage):
+    if game.key.split("_")[-1] == "L":
+        return get_player_usage_evolution_by_team(game.teams[game.team_a], all_players, players_usage, game.key)
+    elif game.key.split("_")[-1] == "V":
+        return get_player_usage_evolution_by_team(game.teams[game.team_b], all_players, players_usage, game.key)
 
 
-def get_player_usage_evolution_by_team(team, players_evolution, game_key):
-    for player in team.players.values():
-        if player.name not in players_evolution.keys():
-            players_evolution[player.name] = {}
-        players_evolution[player.name][game_key] = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
+def get_player_usage_evolution_by_team(team, all_players, players_evolution, game_key):
+    # for player in team.players.values():
+    for (player_name, player_id) in all_players:
+        if player_name not in players_evolution.keys():
+            players_evolution[player_name] = {}
+        players_evolution[player_name][game_key] = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
                                           "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
                                           "minutes": 0}
-        players_evolution[player.name][game_key]["two_made"] += player.stats.get_two_made()
-        players_evolution[player.name][game_key]["three_made"] += player.stats.get_three_made()
-        players_evolution[player.name][game_key]["free_throw_made"] += player.stats.get_free_throw_made()
-        players_evolution[player.name][game_key]["two_attempted"] += player.stats.get_two_attempted()
-        players_evolution[player.name][game_key]["three_attempted"] += player.stats.get_three_attempted()
-        players_evolution[player.name][game_key]["free_throw_attempted"] += player.stats.get_free_throw_attempted()
-        players_evolution[player.name][game_key]["minutes"] += player.stats.get_minutes()
+        for player in team.players.values():
+            if player_name == player.name:
+                players_evolution[player_name][game_key]["two_made"] += player.stats.get_two_made()
+                players_evolution[player_name][game_key]["three_made"] += player.stats.get_three_made()
+                players_evolution[player_name][game_key]["free_throw_made"] += player.stats.get_free_throw_made()
+                players_evolution[player_name][game_key]["two_attempted"] += player.stats.get_two_attempted()
+                players_evolution[player_name][game_key]["three_attempted"] += player.stats.get_three_attempted()
+                players_evolution[player_name][game_key]["free_throw_attempted"] += player.stats.get_free_throw_attempted()
+                players_evolution[player_name][game_key]["minutes"] += player.stats.get_minutes()
     return players_evolution
 
 

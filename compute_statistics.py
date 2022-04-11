@@ -110,11 +110,12 @@ class ComputeStatistics():
     def get_player_usage_evolution(self, game_key):
         games_to_display = self.__get_games_to_display(game_key)
 
-        out_str = "%T2 \n"
+        out_str = "%T2 \n,"
+        all_players = initialize_all_players(games_to_display)
         players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
-            players_evolution = get_player_usage_evolution(game, players_evolution)
+            players_evolution = get_player_usage_evolution(game, all_players, players_evolution)
         out_str += "\n"
         for player_name in players_evolution.keys():
             out_str += player_name + ","
@@ -122,11 +123,10 @@ class ComputeStatistics():
                 out_str += "%.2f," % (stats["two_made"]/float(stats["two_attempted"])*100 if stats["two_attempted"] != 0 else 0)
             out_str += "\n"
 
-        out_str += "\n%T3 \n"
+        out_str += "\n%T3 \n,"
         players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
-            players_evolution = get_player_usage_evolution(game, players_evolution)
         out_str += "\n"
         for player_name in players_evolution.keys():
             out_str += player_name + ","
@@ -135,11 +135,10 @@ class ComputeStatistics():
                     stats["three_made"] / float(stats["three_attempted"]) * 100 if stats["three_attempted"] != 0 else 0)
             out_str += "\n"
 
-        out_str += "\n%TLL \n"
+        out_str += "\n%TLL \n,"
         players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
-            players_evolution = get_player_usage_evolution(game, players_evolution)
         out_str += "\n"
         for player_name in players_evolution.keys():
             out_str += player_name + ","
@@ -148,11 +147,10 @@ class ComputeStatistics():
                     stats["free_throw_made"] / float(stats["free_throw_attempted"]) * 100 if stats["free_throw_attempted"] != 0 else 0)
             out_str += "\n"
 
-        out_str += "\n% Us2 \n"
+        out_str += "\n% Us2 \n,"
         players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
-            players_evolution = get_player_usage_evolution(game, players_evolution)
         out_str += "\n"
         for player_name in players_evolution.keys():
             out_str += player_name + ","
@@ -162,11 +160,10 @@ class ComputeStatistics():
                 out_str += "%.2f," % (stats["two_attempted"]/total_attempted*100 if total_attempted != 0 else 0)
             out_str += "\n"
 
-        out_str += "\n% Us3 \n"
+        out_str += "\n% Us3 \n,"
         players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
-            players_evolution = get_player_usage_evolution(game, players_evolution)
         out_str += "\n"
         for player_name in players_evolution.keys():
             out_str += player_name + ","
@@ -176,12 +173,10 @@ class ComputeStatistics():
                 out_str += "%.2f," % (stats["three_attempted"]/total_attempted*100 if total_attempted != 0 else 0)
             out_str += "\n"
 
-
-        out_str += "\n% UsLL \n"
+        out_str += "\n% UsLL \n,"
         players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
-            players_evolution = get_player_usage_evolution(game, players_evolution)
         out_str += "\n"
         for player_name in players_evolution.keys():
             out_str += player_name + ","
