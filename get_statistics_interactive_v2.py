@@ -1,9 +1,10 @@
 import sys
-import time
 import traceback
 
 from compute_statistics import ComputeStatistics
 from llista_partits import Partits
+from tools.season_loader import SeasonLoader
+from team_link import TeamLink
 
 
 def ask_question(question, options_text, options):
@@ -28,15 +29,21 @@ print("\t D'aquesta manera podràs seleccionar quin tipus d'estadística obtenir
 print("\t Finalment, hauras d'enganxar les dades a un full d'excel (o drive) per a poder visualitzar-les correctament!")
 print("Comencem...\n\n")
 
-answer = ask_question("- Has actualitzat el fitxer llista_partits.py amb els links dels partits? Escriu 1 o 2.",
+answer = ask_question("- Has actualitzat el fitxer team_link.py amb el link a l'equip que vols analitzar? Escriu 1 o 2.",
                       "\t 1. Si\n\t 2. No", 2)
 if answer == 1:
     pass
 elif answer == 2:
-    print("Necessitaràs els links per a poder visualitzar el teu equip. Modifica el fitxer i torna a executar-me.\n")
+    print("Necessitaràs el link per a poder visualitzar el teu equip. Modifica el fitxer i torna a executar-me.\n")
     sys.exit(0)
 
-print("Molt bé, llavors ja podem anar a veure el que ens interessa.\n\n")
+print("Carregant els partits... \n")
+season_loader = SeasonLoader()
+season_games = season_loader.load_season(TeamLink.team_link)
+
+partits = Partits()
+partits.set_partits(season_games)
+print("\n\nMolt bé, llavors ja podem anar a veure el que ens interessa.\n\n")
 
 answer_stats = ask_question("Actualment el programa permet visualitzar les següents opcions. Tria'n una:",
                             "\t1. Punts anotats i rebuts per 5s (acumulats i per partit)\n"
@@ -57,7 +64,7 @@ if answer_accumulated == 2:
                                len(Partits().llista_partits))
     game = list(Partits().llista_partits.keys())[answer_game - 1]
 
-statistics_calculator = ComputeStatistics()
+statistics_calculator = ComputeStatistics(partits.llista_partits)
 out_str = ""
 try:
     if answer_stats == 1:

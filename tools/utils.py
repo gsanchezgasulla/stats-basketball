@@ -1,11 +1,12 @@
 from classes.data import Five
 from classes.play_by_play import PlayType
 
+split_char = "-"
 
 def get_fives_by_minute(game, minutes_distribution):
-    if game.key.split("_")[-1] == "L":
+    if game.key.split(split_char)[-1] == "L":
         return get_fives_by_minute_object_by_team(game.teams[game.team_a], minutes_distribution, game.total_minutes)
-    elif game.key.split("_")[-1] == "V":
+    elif game.key.split(split_char)[-1] == "V":
         return get_fives_by_minute_object_by_team(game.teams[game.team_b], minutes_distribution, game.total_minutes)
 
 
@@ -16,15 +17,17 @@ def get_fives_by_minute_object_by_team(team, minutes_distribution, game_total_mi
             for minute in range(0, game_total_minutes):
                 minutes_distribution[player.name].append(0)
         for minute, in_game in player.get_minutes_played_distribution(game_total_minutes).items():
+            if minute >= 40:
+                minutes_distribution[player.name].append(0)
             minutes_distribution[player.name][minute] += in_game
 
     return minutes_distribution
 
 
 def get_used_five(game):
-    if game.key.split("_")[-1] == "L":
+    if game.key.split(split_char)[-1] == "L":
         return get_used_five_team_a(game)
-    elif game.key.split("_")[-1] == "V":
+    elif game.key.split(split_char)[-1] == "V":
         return get_used_five_team_b(game)
 
 
@@ -110,9 +113,9 @@ def get_buckets_in_minute(game, team_id, minute):
 
 
 def get_player_usage(game, players_usage):
-    if game.key.split("_")[-1] == "L":
+    if game.key.split(split_char)[-1] == "L":
         return get_player_usage_by_team(game.teams[game.team_a], players_usage)
-    elif game.key.split("_")[-1] == "V":
+    elif game.key.split(split_char)[-1] == "V":
         return get_player_usage_by_team(game.teams[game.team_b], players_usage)
 
 
@@ -133,9 +136,9 @@ def get_player_usage_by_team(team, players_usage):
 
 
 def get_player_usage_evolution(game, players_usage):
-    if game.key.split("_")[-1] == "L":
+    if game.key.split(split_char)[-1] == "L":
         return get_player_usage_evolution_by_team(game.teams[game.team_a], players_usage, game.key)
-    elif game.key.split("_")[-1] == "V":
+    elif game.key.split(split_char)[-1] == "V":
         return get_player_usage_evolution_by_team(game.teams[game.team_b], players_usage, game.key)
 
 
@@ -163,10 +166,10 @@ def get_possessions_by_team(team):
 def get_possessions_by_match(game):
     possessions_team_to_study = 0
     possessions_opponent = 0
-    if game.key.split("_")[-1] == "L":
+    if game.key.split(split_char)[-1] == "L":
         possessions_team_to_study = get_possessions_by_team(game.teams[game.team_a])
         possessions_opponent = get_possessions_by_team(game.teams[game.team_b])
-    elif game.key.split("_")[-1] == "V":
+    elif game.key.split(split_char)[-1] == "V":
         possessions_team_to_study = get_possessions_by_team(game.teams[game.team_b])
         possessions_opponent = get_possessions_by_team(game.teams[game.team_a])
 

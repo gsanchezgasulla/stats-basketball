@@ -1,16 +1,12 @@
 
-from llista_partits import Partits
 from classes.season import Season
 from tools.utils import *
 
 
 class ComputeStatistics():
-    partits = Partits().llista_partits
-    season = None
-
-    def __init__(self):
+    def __init__(self, partits):
         self.season = Season()
-        self.season.fill_season(self.partits)
+        self.season.fill_season(partits)
 
     def __get_games_to_display(self, game_key):
         if game_key == "all":  # we want all games

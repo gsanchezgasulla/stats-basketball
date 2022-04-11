@@ -115,6 +115,8 @@ class Game:
                         play.player_id = player["actorId"]
                         play.minute = self.total_minutes
                         play.definition = PlayType.SUBSTITUTION_OUT
+                        if self.total_minutes not in self.play_by_play.keys():
+                            self.play_by_play[self.total_minutes] = []
                         self.play_by_play[self.total_minutes].append(play)
 
                         #also add it to the player
