@@ -15,7 +15,7 @@ class Season:
             print("Carregant el partit vs " + partit_key.replace("_", " "))
 
             json_game, json_play_by_play = self.games_loader.load_game_from_url(partits[partit_key])
-
-            game = Game(partit_key)
-            game.fill_game(json_game, json_play_by_play)
-            self.games[partit_key] = game
+            if len(json_game.keys()) > 0: # we found that in some cases there's an error retrieving the object and is returned empty
+                game = Game(partit_key)
+                game.fill_game(json_game, json_play_by_play)
+                self.games[partit_key] = game

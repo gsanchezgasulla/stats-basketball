@@ -80,10 +80,10 @@ class ComputeStatistics():
         for game in games_to_display:
             players = get_player_usage(game, players)
 
-        out_str = "Jugadora, %T2, TotalT2, %T3, TotalT3, %TLL, TotalTLL, %Us2, %Us3, %UsLL, %UsEquip, %UsMinute\n"
+        out_str = "Jugadora, %T2, TotalT2, %T3, TotalT3, %TLL, TotalTLL, Possessions, %Us2, %Us3, %UsLL, %UsEquip, %UsMinute\n"
         team_usage = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
                       "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
-                      "minutes": 0}
+                      "minutes": 0, "possessions": 0}
         for player in players.values():
             for stat in player.keys():
                 team_usage[stat] += player[stat]
@@ -96,6 +96,7 @@ class ComputeStatistics():
             out_str += "%.2f," % (float(stats["three_attempted"]))
             out_str += "%.2f," % (stats["free_throw_made"]/float(stats["free_throw_attempted"])*100 if stats["free_throw_attempted"] != 0 else 0)
             out_str += "%.2f," % (float(stats["free_throw_attempted"]))
+            out_str += "%.2f," % (float(stats["possessions"]))
             total_attempted = float(stats["two_attempted"] + stats["three_attempted"] + 0.44*stats["free_throw_attempted"])
             out_str += "%.2f," % (stats["two_attempted"]/total_attempted*100 if total_attempted != 0 else 0)
             out_str += "%.2f," % (stats["three_attempted"]/total_attempted*100 if total_attempted != 0 else 0)
@@ -124,7 +125,6 @@ class ComputeStatistics():
             out_str += "\n"
 
         out_str += "\n%T3 \n,"
-        players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
         out_str += "\n"
@@ -136,7 +136,6 @@ class ComputeStatistics():
             out_str += "\n"
 
         out_str += "\n%TLL \n,"
-        players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
         out_str += "\n"
@@ -148,7 +147,6 @@ class ComputeStatistics():
             out_str += "\n"
 
         out_str += "\n% Us2 \n,"
-        players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
         out_str += "\n"
@@ -161,7 +159,6 @@ class ComputeStatistics():
             out_str += "\n"
 
         out_str += "\n% Us3 \n,"
-        players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
         out_str += "\n"
@@ -174,7 +171,6 @@ class ComputeStatistics():
             out_str += "\n"
 
         out_str += "\n% UsLL \n,"
-        players_evolution = {}
         for game in games_to_display:
             out_str += game.key + ","
         out_str += "\n"
@@ -196,7 +192,7 @@ class ComputeStatistics():
             players_all = {**players_all, **players}
             team_usage = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
                       "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
-                      "minutes": 0}
+                      "minutes": 0, "possessions": 0}
             for player in players.values():
                 for stat in player.keys():
                     team_usage[stat] += player[stat]
@@ -215,27 +211,11 @@ class ComputeStatistics():
                             float(team_usage_global[game.key]["two_attempted"] +
                                   team_usage_global[game.key]["three_attempted"] +
                                   team_usage_global[game.key]["free_throw_attempted"]) * 100)
-                    # out_str += "%.2f," % player_usage
                     out_str += "%.2f," % ((player_usage * team_usage_global[game.key]["minutes"]) /
                                          float(5 * stats["minutes"]) if stats["minutes"] != 0 else 0)
                 else:
                     out_str += "0.0,"
             out_str += "\n"
-
-
-
-        # for game in games_to_display:
-        #     players = get_player_usage(game, {})
-        #     for player, stats in players.items():
-        #         out_str += player + ","
-        #         player_usage = (
-        #                     (stats["two_attempted"] + stats["three_attempted"] + stats["free_throw_attempted"]) /
-        #                     float(team_usage_global[game.key]["two_attempted"] +
-        #                           team_usage_global[game.key]["three_attempted"] +
-        #                           team_usage_global[game.key]["free_throw_attempted"]) * 100)
-        #         out_str += "%.2f," % player_usage
-        #         out_str += "%.2f" % ((player_usage * team_usage_global[game.key]["minutes"]) / float(5 * stats["minutes"]) if
-        #                              stats["minutes"] != 0 else 0)
 
         return out_str
 

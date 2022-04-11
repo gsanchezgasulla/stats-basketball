@@ -124,7 +124,7 @@ def get_player_usage_by_team(team, players_usage):
         if player.name not in players_usage.keys():
             players_usage[player.name] = {"two_made": 0, "three_made": 0, "free_throw_made": 0,
                                           "two_attempted": 0, "three_attempted": 0, "free_throw_attempted": 0,
-                                          "minutes": 0}
+                                          "minutes": 0, "possessions": 0}
         players_usage[player.name]["two_made"] += player.stats.get_two_made()
         players_usage[player.name]["three_made"] += player.stats.get_three_made()
         players_usage[player.name]["free_throw_made"] += player.stats.get_free_throw_made()
@@ -132,6 +132,7 @@ def get_player_usage_by_team(team, players_usage):
         players_usage[player.name]["three_attempted"] += player.stats.get_three_attempted()
         players_usage[player.name]["free_throw_attempted"] += player.stats.get_free_throw_attempted()
         players_usage[player.name]["minutes"] += player.stats.get_minutes()
+        players_usage[player.name]["possessions"] += player.stats.get_possessions()
     return players_usage
 
 
@@ -148,9 +149,9 @@ def initialize_all_players(games_to_display):
     return all_players
 
 def get_player_usage_evolution(game, all_players, players_usage):
-    if game.key.split("_")[-1] == "L":
+    if game.key.split(split_char)[-1] == "L":
         return get_player_usage_evolution_by_team(game.teams[game.team_a], all_players, players_usage, game.key)
-    elif game.key.split("_")[-1] == "V":
+    elif game.key.split(split_char)[-1] == "V":
         return get_player_usage_evolution_by_team(game.teams[game.team_b], all_players, players_usage, game.key)
 
 
