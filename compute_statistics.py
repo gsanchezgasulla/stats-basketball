@@ -8,15 +8,12 @@ class ComputeStatistics():
         self.season = Season()
         self.season.fill_season(partits)
 
-    def __get_games_to_display(self, game_key):
-        if game_key == "all":  # we want all games
-            return self.season.games.values()
-        else:
-            return [self.season.games[game_key]]
+    def __get_games_to_display(self):
+        return self.season.games.values()
 
-    def get_scores_by_fives(self, game_key):
+    def get_scores_by_fives(self):
 
-        games_to_display = self.__get_games_to_display(game_key)
+        games_to_display = self.__get_games_to_display()
         accumulated_fives = {}
 
         for game in games_to_display:
@@ -31,7 +28,7 @@ class ComputeStatistics():
                     accumulated_fives[key].points_scored += five.points_scored
                     accumulated_fives[key].points_received += five.points_received
 
-        str_out = ""
+        str_out = "J1,J2,J3,J4,J5, Minuts, Punts anotats, Punts rebuts\n"
         for five in accumulated_fives.values():
             for player in five.players:
                 str_out += player + ","
@@ -41,8 +38,8 @@ class ComputeStatistics():
 
         return str_out
 
-    def get_minutes_distribution_in_game(self, game_key):
-        games_to_display = self.__get_games_to_display(game_key)
+    def get_minutes_distribution_in_game(self):
+        games_to_display = self.__get_games_to_display()
         max_minutes_played = self.__get_max_minutes_played(games_to_display)
         minutes_distribution = {}
         minutes_score = {}
@@ -74,8 +71,8 @@ class ComputeStatistics():
 
         return out_str
 
-    def get_player_usage(self, game_key):
-        games_to_display = self.__get_games_to_display(game_key)
+    def get_player_usage(self):
+        games_to_display = self.__get_games_to_display()
         players = {}
         for game in games_to_display:
             players = get_player_usage(game, players)
@@ -108,8 +105,8 @@ class ComputeStatistics():
 
         return out_str
 
-    def get_player_usage_evolution(self, game_key):
-        games_to_display = self.__get_games_to_display(game_key)
+    def get_player_usage_evolution(self):
+        games_to_display = self.__get_games_to_display()
 
         out_str = "%T2 \n,"
         all_players = initialize_all_players(games_to_display)
@@ -225,8 +222,8 @@ class ComputeStatistics():
             total_max_minutes = max(total_max_minutes, game.total_minutes)
         return total_max_minutes
 
-    def get_team_possessions_by_match(self, game_key):
-        games_to_display = self.__get_games_to_display(game_key)
+    def get_team_possessions_by_match(self):
+        games_to_display = self.__get_games_to_display()
 
         header_str = "Possessions by match,"
         teams_study_str = "Team studied,"

@@ -13,11 +13,22 @@ def ask_question(question, options_text, options):
         text = input(options_text + "\n")
 
         try:
-            resposta = int(text)
-            if 0 <= resposta > options:
-                print(" La opció seleccionada no existeix!!")
-            else:
+            if "," in text: # multioption selected
+                resposta = []
+                for split_text in text.split(","):
+                    num = int(split_text)
+                    if 0 < num > options:
+                        print(" La opció seleccionada '" + split_text + "' no existeix!!")
+                    else:
+                        resposta.append(num)
                 return resposta
+
+            else:
+                resposta = int(text)
+                if 0 <= resposta > options:
+                    print(" La opció seleccionada no existeix!!")
+                else:
+                    return resposta
         except ValueError:
             print("La opció seleccionada no és un número!!")
 
@@ -53,30 +64,38 @@ answer_stats = ask_question("Actualment el programa permet visualitzar les segü
                             "\t5. evolució possessions per partit de l'equip.", 5)
 
 answer_accumulated = 0
-game = "all"
+
+games_to_analyze =  {}
 if answer_stats != 4 or answer_stats != 5:
-    answer_accumulated = ask_question("\nVols veure els resultats acumulats o només d'un partit?",
+    answer_accumulated = ask_question("\nVols veure els resultats acumulats o seleccionar per partit?",
                                   "\t1. Acumulats\n"
-                                  "\t2. Un sol partit", 2)
+                                  "\t2. Escull els partits", 2)
 
 if answer_accumulated == 2:
-    answer_game = ask_question("\nQuin partit vols visualitzar?", Partits().get_partits_to_print(),
-                               len(Partits().llista_partits))
-    game = list(Partits().llista_partits.keys())[answer_game - 1]
+    answer_game = ask_question("\nQuin partit vols visualitzar? Pots posar una llista de números separada per comes "
+                               "per si vols triar-ne de varies formes. Ex: 1,2,3,20,21\n", partits.get_partits_to_print(),
+                               len(partits.llista_partits))
+    if type(answer_game) != list:
+        answer_game = [answer_game]
+    for idx in answer_game:
+        games_to_analyze[list(partits.llista_partits.keys())[idx-1]] = list(partits.llista_partits.values())[idx-1]
 
-statistics_calculator = ComputeStatistics(partits.llista_partits)
+else:
+    games_to_analyze = partits.llista_partits
+
+statistics_calculator = ComputeStatistics(games_to_analyze)
 out_str = ""
 try:
     if answer_stats == 1:
-        out_str = statistics_calculator.get_scores_by_fives(game)
+        out_str = statistics_calculator.get_scores_by_fives()
     elif answer_stats == 2:
-        out_str = statistics_calculator.get_minutes_distribution_in_game(game)
+        out_str = statistics_calculator.get_minutes_distribution_in_game()
     elif answer_stats == 3:
-        out_str = statistics_calculator.get_player_usage(game)
+        out_str = statistics_calculator.get_player_usage()
     elif answer_stats == 4:
-        out_str = statistics_calculator.get_player_usage_evolution(game)
+        out_str = statistics_calculator.get_player_usage_evolution()
     elif answer_stats == 5:
-        out_str = statistics_calculator.get_team_possessions_by_match(game)
+        out_str = statistics_calculator.get_team_possessions_by_match()
 
 except (Exception, BaseException) as e:
     out_str  = "There has been an error:\n\n"
